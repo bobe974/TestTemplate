@@ -36,13 +36,13 @@ Framework css : [Bootstrap 4](https://getbootstrap.com/)
 - Supprimer un article (Popup de validation sur la page show)
 - Ajouter un article
 
-List :
+### List :
 ![Wireframes list](wireframes/list.jpg)
 
-Show :
+### Show :
 ![Wireframes list](wireframes/show.jpg)
 
-Add :
+### Add :
 ![Wireframes list](wireframes/add.jpg)
 
 
@@ -52,6 +52,7 @@ Add :
 
 ### Github
 
+Merci de **Fork** le projet et de nous envoyer le lien.
 Utilisation des bonnes pratiques de Git
 
 # Good luck
