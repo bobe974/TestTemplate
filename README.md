@@ -40,7 +40,7 @@ List :
 ![Wireframes list](wireframes/list.jpg)
 
 Show :
-![Wireframes list](wireframes/Show.jpg)
+![Wireframes list](wireframes/show.jpg)
 
 Add :
 ![Wireframes list](wireframes/add.jpg)
