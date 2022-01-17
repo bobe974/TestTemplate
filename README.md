@@ -5,7 +5,7 @@ Docker compose **si possible**, car plus simple pour nous de tester.
 
 ## BACKEND
 
-Sera une API PHP : [Laravel](https://laravel.com/) ou [Symfony](https://symfony.com/)
+Sera une API PHP : [Symfony](https://symfony.com/)
 
 Entités : A minima Article et Catégories ( relation OneToMany )
 
@@ -27,7 +27,7 @@ Au choix, peuvent être hardcodés dans la base directement
 
 Framework JS (avec routeur) : [VueJS](https://vuejs.org/) ou [ReactJS](https://fr.reactjs.org/)
 
-Framework css : [Bootstrap 4](https://getbootstrap.com/)
+Framework css : [Bootstrap 5](https://getbootstrap.com/)
 
 ### Pages
 
@@ -48,7 +48,7 @@ Framework css : [Bootstrap 4](https://getbootstrap.com/)
 
 ### Wireframes
 
-[LIEN vers les wireframes](wireframes.pdf) il n'est pas obligé de respecter le template c'est juste pour donner des idées.
+[LIEN vers les wireframes](wireframes/wireframes.pdf) il n'est pas obligé de respecter le template c'est juste pour donner des idées.
 
 ### Github
 
