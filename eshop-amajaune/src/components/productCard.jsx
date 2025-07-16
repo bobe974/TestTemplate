@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCard = ({product}) => {
   return (
-    <React.Fragment>
+    <div>
         <div classNameName="group relative">
         <img src={product.image} className="aspect-square  rounded-md bg-gray-200 object-cover group-hover:opacity-75 lg:aspect-auto lg:h-80" />
         <div className="mt- flex justify-between">
@@ -17,7 +17,7 @@ const ProductCard = ({product}) => {
           </div>
         </div>
       </div>
-    </React.Fragment>
+    </div>
   )
 }
 

@@ -46,7 +46,24 @@ export const articles = [
     categorie: "Vêtements",
     image: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=300&h=300&fit=crop&crop=center",
     dateDePublication: "2024-11-28"
+  },
+    {
+    id: 7,
+    nom: "Lunettes de soleil",
+    qte: 15,
+    categorie: "Accessoires",
+    image: "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=300&h=300&fit=crop&crop=center",
+    dateDePublication: "2024-11-25"
+  },
+  {
+    id: 8,
+    nom: "Livre de développement",
+    qte: 6,
+    categorie: "Livres",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=300&fit=crop&crop=center",
+    dateDePublication: "2024-11-20"
   }
+  
 ];
 
 export function getProduct() {
