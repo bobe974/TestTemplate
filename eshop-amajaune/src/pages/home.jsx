@@ -5,7 +5,7 @@ import { useProducts } from "../context/ProductContext";
 
 function Home() {
  
-  const { produits, setProduits } = useProducts();
+  const { produits } = useProducts();
   return (
     <div>
       <div className="text-right p-4">
@@ -15,7 +15,6 @@ function Home() {
       </div>
       <div className="grid grid-cols-4 gap-4">
         {produits.map((p) => {
-          console.log("img " + p.image);
           return <ProductCard product={p} key={p.id} />;
         })}
       </div>
