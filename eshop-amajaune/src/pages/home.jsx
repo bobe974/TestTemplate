@@ -1,12 +1,12 @@
 // pages/home.jsx
 import React, { useState } from "react";
 import ProductCard from "../components/productCard";
-import { getProduct } from "../data/articles";
 import { Link } from "react-router-dom";
+import { useProducts } from "../context/ProductContext";
 
 function Home() {
-  const [produits, setProduits] = useState(() => getProduct());
-  
+ 
+  const { produits, setProduits } = useProducts();
   return (
     <div>
       <div className="text-right p-4">

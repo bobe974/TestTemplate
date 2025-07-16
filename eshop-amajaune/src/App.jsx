@@ -1,14 +1,19 @@
 import './App.css'
 import Header from './components/header'
-import { Outlet, Routes } from "react-router-dom";
+import { Outlet} from "react-router-dom";
+import { getProduct } from './data/articles';
+import { ProductContext } from './context/ProductContext';
+import { useState } from 'react';
 
 function App() {
+  
+   const [produits, setProduits] = useState(() => getProduct());
 
 return (
-    <div >
+     <ProductContext.Provider value={{ produits, setProduits }}>
      <Header></Header>
      <Outlet/>
-    </div>
+     </ProductContext.Provider>
   );
 }
 
