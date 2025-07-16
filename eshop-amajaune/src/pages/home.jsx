@@ -1,5 +1,4 @@
-// pages/home.jsx
-import React, { useState } from "react";
+
 import ProductCard from "../components/productCard";
 import { Link } from "react-router-dom";
 import { useProducts } from "../context/ProductContext";

@@ -9,8 +9,14 @@ function App() {
   
    const [produits, setProduits] = useState(() => getProduct());
 
+   const addProduct = (formProductData) => {
+      console.log("DATA " + formProductData.nom)
+      const tempProduits = [...produits, formProductData];
+      setProduits(tempProduits)
+   }
+
 return (
-     <ProductContext.Provider value={{ produits, setProduits }}>
+     <ProductContext.Provider value={{ produits, addProduct }}>
      <Header></Header>
      <Outlet/>
      </ProductContext.Provider>
