@@ -5,6 +5,8 @@ import App from "./App.jsx";
 import ProductPage from "./pages/productPage.jsx";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./pages/home.jsx";
+import ManageProduct from "./pages/manageProduct.jsx";
+import FormProduct from "./components/formProduct.jsx";
 
 const router = createBrowserRouter([
   {
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+       {
+        path: "/manage",
+        element: <ManageProduct />,
+      },
+      {
+        path: "/addproduct",
+        element: <FormProduct />,
       },
     ],
   }
