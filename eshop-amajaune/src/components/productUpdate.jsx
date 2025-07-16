@@ -1,17 +1,21 @@
 import { useForm } from "react-hook-form";
+import { useProducts } from "../context/ProductContext";
 
 function ProductUpdate({ product }) {
   const {
     register,
     handleSubmit,
-    formState: { errors }
+    formState: { errors },
   } = useForm({
-    defaultValues: product
+    defaultValues: product,
   });
 
+  const { updateProduct } = useProducts();
+
   const onSubmit = (data) => {
+    //updatee
+    updateProduct(data);
     console.log("Produit mis à jour :", data);
-    //maj data dans le via une methode provenant de app conxtext
   };
 
   return (
@@ -25,41 +29,70 @@ function ProductUpdate({ product }) {
 
       <div>
         <label>Nom</label>
-        <input {...register("nom")} className="w-full border px-3 py-2 rounded" />
+        <input
+          {...register("nom")}
+          className="w-full border px-3 py-2 rounded"
+        />
       </div>
 
       <div className="grid grid-cols-2 gap-4">
         <div>
           <label>Quantité</label>
-          <input type="number" {...register("qte")} className="w-full border px-3 py-2 rounded" />
+          <input
+            type="number"
+            {...register("qte")}
+            className="w-full border px-3 py-2 rounded"
+          />
         </div>
         <div>
           <label>Prix</label>
-          <input type="number" step="0.01" {...register("prix")} className="w-full border px-3 py-2 rounded" />
+          <input
+            type="number"
+            step="0.01"
+            {...register("prix")}
+            className="w-full border px-3 py-2 rounded"
+          />
         </div>
       </div>
 
       <div>
         <label>Catégorie</label>
-        <input {...register("categorie")} className="w-full border px-3 py-2 rounded" />
+        <input
+          {...register("categorie")}
+          className="w-full border px-3 py-2 rounded"
+        />
       </div>
 
       <div>
         <label>Image</label>
-        <input {...register("image")} className="w-full border px-3 py-2 rounded" />
+        <input
+          {...register("image")}
+          className="w-full border px-3 py-2 rounded"
+        />
       </div>
 
       <div>
         <label>Date de publication</label>
-        <input type="date" {...register("dateDePublication")} className="w-full border px-3 py-2 rounded" />
+        <input
+          type="date"
+          {...register("dateDePublication")}
+          className="w-full border px-3 py-2 rounded"
+        />
       </div>
 
       <div>
         <label>Description</label>
-        <textarea {...register("description")} rows={3} className="w-full border px-3 py-2 rounded" />
+        <textarea
+          {...register("description")}
+          rows={3}
+          className="w-full border px-3 py-2 rounded"
+        />
       </div>
 
-      <button type="submit" className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+      <button
+        type="submit"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+      >
         Enregistrer
       </button>
     </form>
