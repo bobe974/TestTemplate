@@ -96,7 +96,7 @@ function ProductUpdate({ product, onClose }) {
           className="w-full border px-3 py-2 rounded"
         />
       </div>
-
+      <div className="flex justify-center">
       <button
         type="submit"
         className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mr-8"
@@ -109,6 +109,8 @@ function ProductUpdate({ product, onClose }) {
       >
         Supprimer
       </button>
+      </div>
+      
     </form>
   );
 }

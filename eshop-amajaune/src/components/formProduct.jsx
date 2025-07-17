@@ -12,6 +12,7 @@ const AddProductForm = ({ onSubmit }) => {
 
   const handleFormSubmit = (data) => {
     const productData = {
+      id: data.id,
       nom: data.nom,
       qte: parseInt(data.qte),
       prix: parseFloat(data.prix),
@@ -29,6 +30,7 @@ const AddProductForm = ({ onSubmit }) => {
 
     console.log("Données du produit:", productData.nom);
     console.log(productData);
+    productData.id = !productData.id ? crypto.randomUUID() : productData.id;
     //envoie au context
     addProduct(productData);
   };
@@ -37,8 +39,8 @@ const AddProductForm = ({ onSubmit }) => {
   const { addProduct } = useProducts();
 
   return (
-    <div className="flex justify-center pt-12 bg-gray-50 min-h-screen">
-      <div className="max-w-2xl w-full bg-white rounded-lg shadow-md p-6 max-h-[750px]">
+    <div className="flex justify-center pt-2 px-4 bg-gray-50 min-h-screen">
+      <div className="w-full max-w-md sm:max-w-lg md:max-w-xl lg:max-w-2xl bg-white rounded-lg shadow-md p-6 max-h-[90vh] overflow-y-auto">
         <h2 className="text-2xl font-bold mb-6 text-gray-800 text-center">
           Ajouter un produit
         </h2>
@@ -154,14 +156,14 @@ const AddProductForm = ({ onSubmit }) => {
               className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
             />
           </div>
-            
+
           <div className="flex justify-center">
             <button
-            type="submit"
-            className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium"
-          >
-            Ajouter le produit
-          </button>
+              type="submit"
+              className="bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 font-medium"
+            >
+              Ajouter le produit
+            </button>
           </div>
 
           {/* {data && (
