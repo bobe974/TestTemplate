@@ -2,6 +2,7 @@ import { useProducts } from "../context/ProductContext";
 import Modal from "../components/modal";
 import { useState } from "react";
 import ProductUpdate from "../components/productUpdate";
+import { Link } from "react-router-dom";
 
 function ManageProduct() {
   const { produits } = useProducts();
@@ -14,7 +15,15 @@ function ManageProduct() {
     setIsModalOpen(true);
   };
   return (
-    <div className="w-full overflow-x-auto">
+    <div className=" flex flex-col min-h-screen mt-4 ">
+      <div className="flex justify-end mr-4  mb-4">
+       <Link
+        to="/addproduct"
+        className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+      >
+        Ajouter
+      </Link>
+      </div>
       <div className="min-w-full inline-block align-middle">
         <div className="overflow-hidden border border-gray-200 rounded-lg shadow-sm">
           <table className="min-w-full divide-y divide-gray-200">
@@ -85,9 +94,13 @@ function ManageProduct() {
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
                 title={selectedProduct.nom}
-                children={<ProductUpdate product = {selectedProduct} onClose={() => setIsModalOpen(false)} ></ProductUpdate>}
-              >
-              </Modal>
+                children={
+                  <ProductUpdate
+                    product={selectedProduct}
+                    onClose={() => setIsModalOpen(false)}
+                  ></ProductUpdate>
+                }
+              ></Modal>
             )}
           </table>
         </div>

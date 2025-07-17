@@ -1,6 +1,5 @@
 
 import ProductCard from "../components/productCard";
-import { Link } from "react-router-dom";
 import { useProducts } from "../context/ProductContext";
 
 function Home() {
@@ -8,12 +7,7 @@ function Home() {
   const { produits } = useProducts();
   return (
     <div>
-      <div className="text-right p-4">
-        <Link to="/addproduct" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ml-auto">
-          Ajouter
-        </Link>
-      </div>
-      <div className="grid grid-cols-4 gap-4">
+      <div className="grid grid-cols-4 gap-4 content-center mt-8">
         {produits.map((p) => {
           return <ProductCard product={p} key={p.id} />;
         })}
