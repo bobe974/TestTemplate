@@ -10,12 +10,17 @@ function ProductUpdate({ product }) {
     defaultValues: product,
   });
 
-  const { updateProduct } = useProducts();
+  const { updateProduct, deleteProduct } = useProducts();
 
   const onSubmit = (data) => {
     //updatee
     updateProduct(data);
     console.log("Produit mis à jour :", data);
+  };
+
+  const onDelete= (data) => {
+    console.log("delete:", data.id);
+    deleteProduct(data)
   };
 
   return (
@@ -91,9 +96,15 @@ function ProductUpdate({ product }) {
 
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700"
+        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mr-8"
       >
         Enregistrer
+      </button>
+      <button
+      onClick={handleSubmit(onDelete)}
+        className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700 p-2"
+      >
+        Supprimer
       </button>
     </form>
   );

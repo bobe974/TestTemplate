@@ -22,8 +22,14 @@ function App() {
     setProduits(tempProduits);
   };
 
+  const deleteProduct = (formProductData) => {
+    console.log("DATA DELETE", formProductData.nom);
+    const tempProducts = produits.filter((p) => p.id !== formProductData.id);
+    setProduits(tempProducts);
+  };
+
   return (
-    <ProductContext.Provider value={{ produits, addProduct, updateProduct }}>
+    <ProductContext.Provider value={{ produits, addProduct, updateProduct, deleteProduct }}>
       <Header></Header>
       <Outlet />
     </ProductContext.Provider>
