@@ -85,7 +85,7 @@ function ManageProduct() {
                 isOpen={isModalOpen}
                 onClose={() => setIsModalOpen(false)}
                 title={selectedProduct.nom}
-                children={<ProductUpdate product = {selectedProduct}></ProductUpdate>}
+                children={<ProductUpdate product = {selectedProduct} onClose={() => setIsModalOpen(false)} ></ProductUpdate>}
               >
               </Modal>
             )}

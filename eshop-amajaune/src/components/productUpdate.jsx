@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useProducts } from "../context/ProductContext";
 
-function ProductUpdate({ product }) {
+function ProductUpdate({ product, onClose }) {
   const {
     register,
     handleSubmit,
@@ -12,15 +12,18 @@ function ProductUpdate({ product }) {
 
   const { updateProduct, deleteProduct } = useProducts();
 
+
   const onSubmit = (data) => {
     //updatee
     updateProduct(data);
     console.log("Produit mis à jour :", data);
+     onClose()
   };
 
   const onDelete= (data) => {
     console.log("delete:", data.id);
     deleteProduct(data)
+    onClose()
   };
 
   return (

@@ -156,7 +156,7 @@ const AddProductForm = ({ onSubmit }) => {
         </button>
       </form>
 
-      {data && (
+      {/* {data && (
         <div className="mt-6">
           <h3 className="text-lg font-semibold mb-2 text-gray-800">
             Données du formulaire :
@@ -165,7 +165,7 @@ const AddProductForm = ({ onSubmit }) => {
             {data}
           </pre>
         </div>
-      )}
+      )} */}
     </div>
   );
 };
