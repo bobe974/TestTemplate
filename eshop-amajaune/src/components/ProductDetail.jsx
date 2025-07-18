@@ -11,7 +11,7 @@ const ProductDetail = ({ product }) => {
 
       <div className="flex flex-col justify-between w-full md:w-1/2">
         <div>
-          <h2 className="text-2xl font-bold text-gray-800 mb-2">{product.nom}</h2>
+          
           <p className="text-gray-600 mb-4">{product.description}</p>
         </div>
         <div>
