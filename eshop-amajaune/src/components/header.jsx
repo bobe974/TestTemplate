@@ -3,7 +3,7 @@ import logo from "../assets/logoAJ.png";
 
 const Header = () => {
   return (
-    <nav className="bg-gray-800 fixed top-0 left-0 right-0 h-16 z-50 flex items-center px-4">
+    <nav className="bg-gray-900 fixed top-0 left-0 right-0 h-16 z-50 flex items-center px-4">
       <div className=" max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center space-x-6">

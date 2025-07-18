@@ -99,7 +99,7 @@ function ProductUpdate({ product, onClose }) {
       <div className="flex justify-center">
       <button
         type="submit"
-        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 mr-8"
+        className="bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600 mr-8"
       >
         Enregistrer
       </button>

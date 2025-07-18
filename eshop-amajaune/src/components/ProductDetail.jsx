@@ -15,7 +15,7 @@ const ProductDetail = ({ product }) => {
           <p className="text-gray-600 mb-4">{product.description}</p>
         </div>
         <div>
-          <span className="text-xl font-semibold text-blue-600">
+          <span className="text-xl font-semibold text-yellow-500">
             {product.prix} €
           </span>
         </div>
