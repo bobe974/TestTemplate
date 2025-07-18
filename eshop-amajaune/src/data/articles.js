@@ -79,6 +79,28 @@ export const articles = [
     dateDePublication: "2024-11-20",
     description: "Un guide complet pour apprendre les bases du développement web moderne."
   }
+  ,
+  {
+    id: 9,
+    nom: "Livre de développement",
+    qte: 6,
+    prix: 45.99,
+    categorie: "Livres",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=300&fit=crop&crop=center",
+    dateDePublication: "2024-11-20",
+    description: "Un guide complet pour apprendre les bases du développement web moderne."
+  }
+  ,
+  {
+    id: 10,
+    nom: "Livre de développement",
+    qte: 6,
+    prix: 45.99,
+    categorie: "Livres",
+    image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=300&fit=crop&crop=center",
+    dateDePublication: "2024-11-20",
+    description: "Un guide complet pour apprendre les bases du développement web moderne."
+  }
 ];
 
 export function getProduct() {

@@ -31,7 +31,9 @@ function App() {
   return (
     <ProductContext.Provider value={{ produits, addProduct, updateProduct, deleteProduct }}>
       <Header></Header>
+     <main className="pt-20 px-4">
       <Outlet />
+      </main>
     </ProductContext.Provider>
   );
 }
