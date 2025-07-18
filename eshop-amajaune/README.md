@@ -1,6 +1,5 @@
 # 🚀 Démarrer et Lancer le projet
 
-```bash
 ### Aller dans le dossier du projet
 cd TestTemplate/eshop-amajaune
 
