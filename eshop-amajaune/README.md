@@ -9,5 +9,5 @@ npm install
 ### Lancer le serveur de développement
 npm run dev
 
-### Admirer le futur Amazon devant vos yeux (ébailli)
+### Admirer le futur Amazon devant vos yeux (impressed)
 ...
