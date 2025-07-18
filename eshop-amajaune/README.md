@@ -1,14 +1,13 @@
 # 🚀 Démarrer et Lancer le projet
-### Étapes
 
-# Aller dans le dossier du projet
+### Aller dans le dossier du projet
 cd TestTemplate/eshop-amajaune
 
-# Installer les dépendances
+### Installer les dépendances
 npm install
 
-# Lancer le serveur de développement
+### Lancer le serveur de développement
 npm run dev
 
-# Admirer le futur Amazon devant vos yeux (ébailli)
+### Admirer le futur Amazon devant vos yeux (ébailli)
 ...
