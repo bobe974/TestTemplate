@@ -7,7 +7,7 @@ function Home() {
   const { produits } = useProducts();
   return (
     <div>
-      <div className="grid grid-cols-4 gap-4 content-center mt-8">
+      <div className="grid grid-cols-4 gap-4 content-center mt-4">
         {produits.map((p) => {
           return <ProductCard product={p} key={p.id} />;
         })}

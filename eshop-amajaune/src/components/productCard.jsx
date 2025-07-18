@@ -20,7 +20,7 @@ const ProductCard = ({product}) => {
       </div>
     </div>
   </button>
-  <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title = {product.nom} children={<ProductDetail product={product}/>}></Modal>
+  <Modal isOpen={isModalOpen} onClose={() => setIsModalOpen(false)} title = {product.nom}><ProductDetail product={product}/></Modal>
 </div>
   )
 }

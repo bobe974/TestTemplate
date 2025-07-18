@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { useProducts } from "../context/ProductContext";
 
-const AddProductForm = ({ onSubmit }) => {
+const FormProduct = () => {
   const {
     register,
     handleSubmit,
@@ -23,10 +23,6 @@ const AddProductForm = ({ onSubmit }) => {
     };
 
     setData(JSON.stringify(productData, null, 2));
-
-    if (onSubmit) {
-      onSubmit(productData.prix);
-    }
 
     console.log("Données du produit:", productData.nom);
     console.log(productData);
@@ -182,4 +178,4 @@ const AddProductForm = ({ onSubmit }) => {
   );
 };
 
-export default AddProductForm;
+export default FormProduct;
