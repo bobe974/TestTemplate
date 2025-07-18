@@ -1,7 +1,7 @@
 # 🚀 Démarrer et Lancer le projet
 ### Étapes
 
-# Aller dans le dossier où tu veux créer le projet
+# Aller dans le dossier du projet
 cd TestTemplate/eshop-amajaune
 
 # Installer les dépendances
